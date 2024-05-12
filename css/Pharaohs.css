@@ -1,0 +1,455 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: rtl;
+}
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Cairo", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+.main-title {
+    margin: 0 auto 80px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.spikes {
+    position: relative;
+}
+.spikes::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(135deg, white 25%, transparent 25%),
+    linear-gradient(225deg, white 25%, transparent 25%);
+    background-size: 30px 30px;
+}
+
+  /* End Global Rules */
+
+
+
+  /* Start Landing */
+.landing {
+    position: relative;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    z-index: -1;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+}
+.landing .container {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+}
+.landing .text {
+    flex: 1;
+}
+@media (max-width: 991px) {
+    .landing .text {
+    text-align: center;
+    }
+}
+
+.landing .text {
+    overflow: hidden;
+    transition: .5s;
+}
+@keyframes showContent {
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.landing .text p,
+.landing .text h1
+{
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+.main .content h1{
+    animation-delay: 1s;
+}
+.landing .text p{
+    font-weight: bold;
+    animation-duration: 1.3s;
+}
+@media (max-width: 767px) {
+.landing .text h1 {
+    font-size: 28px;
+    }
+}
+.landing .text p {
+    font-size: 23px;
+    line-height: 1.7;
+    margin: 5px 0 0;
+    color: #666;
+    max-width: 500px;
+}
+@media (max-width: 991px) {
+    .landing .text p {
+    margin: 10px auto;
+    }
+}
+@media (max-width: 767px) {
+    .landing .text p {
+    font-size: 18px;
+    }
+}
+.landing .image img {
+    position: relative;
+    width: 600px;
+    animation: up-and-down 5s linear infinite;
+}
+@media (max-width: 991px) {
+.landing .image {
+    display: none;
+    }
+}
+  /* End Landing */
+
+
+  /* Start building */
+.cards {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+}
+.cards .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+}
+.card {
+	width: 250px;
+	height: 400px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 36px;
+	perspective: 2500px;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.cover-image {
+    width: 250px;
+	height: 350px;
+    object-fit: cover;
+}
+.wrapper {
+	transition: all 0.5s;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	background: #000;
+	border-radius: 30px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.wrapper img {
+	border-radius: 30px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card:hover .wrapper {
+	transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+	box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+.wrapper::before,
+.wrapper::after {
+	content: "";
+	opacity: 0;
+	width: 100%;
+	height: 80px;
+	transition: all 0.5s;
+	border-radius: 30px;
+	position: absolute;
+	left: 0;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.wrapper::before {
+	top: 0;
+	height: 100%;
+	background-image: linear-gradient(to top,transparent 46%,rgba(12, 13, 19, 0.5) 68%,rgba(12, 13, 19) 97%);
+}
+.wrapper::after {
+	bottom: 0;
+	opacity: 1;
+	background-image: linear-gradient(to bottom,transparent 46%,rgba(12, 13, 19, 0.5) 68%,rgba(12, 13, 19) 97%);
+}
+.card:hover .wrapper::before,
+.wrapper::after {
+	opacity: 1;
+}
+.card:hover .wrapper::after {
+	height: 120px;
+}
+.card:hover .cover-image {
+    opacity: 0.3;
+}
+.character {
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+	filter: drop-shadow(2px 2px 2px #000);
+	position: absolute;
+	z-index: -1;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: white;
+}
+.card:hover .character {
+	opacity: 1;
+	transform: translate3d(5%, -20%, 70px);
+}
+  /* End building */
+
+
+
+  /* Start Gallery */
+.building {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+.building .container {
+    display: flex;
+    flex-direction: column;
+}
+.building .box {
+    margin-bottom: 100px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: var(--section-background);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    padding: 20px;
+    transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+.building .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.building .box img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: auto;
+}
+.building .box .content {
+    padding: 20px;
+}
+.building .box .content h3 {
+    margin: 0;
+}
+.building .box .content p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #666666;
+}
+  /* End Gallery */
+
+
+  /* Start Footer */
+.footer {
+    background-color: #191919;
+    padding: 20px 0 0;
+}
+@media (max-width: 767px) {
+    .footer {
+    text-align: center;
+    }
+}
+.footer .container{
+    width: 800px;
+    height: 120px;
+    justify-content: space-between;
+}
+.footer .content{
+    float: right;
+}
+.footer .box h3 {
+    color: white;
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+.footer p{
+    color: white;
+}
+.footer .footer-gallery{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 5px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding-top: 25px;
+}
+.footer .footer-gallery img {
+    width: 60px;
+    height: 50px;
+    border: 3px solid white;
+}
+.footer .copyright {
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    margin: 20px 0 0;
+    border-top: 1px solid #444;
+}
+  /* End Footer */
+  /* Start Animation */
+@keyframes up-and-down {
+    0%,
+    100% {
+    top: 0;
+    }
+    50% {
+    top: -50px;
+    }
+}
+@keyframes flashing {
+    0%,
+    40% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+    }
+}
+  /* End Animation */
+
+  /* تحسين الصفحة للأجهزة الصغيرة (الهواتف المحمولة) */
+@media (max-width: 767px) {
+    /* تقليل هامش الحاوية في الأجهزة الصغيرة */
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* تقليل عرض البطاقة لتناسب أحجام الشاشات الصغيرة */
+    .card {
+        width: 100%;
+    }
+
+    /* ضبط الصور في البطاقات لتتناسب مع الأجهزة المحمولة */
+    .cover-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* تحسين الأقسام لتكون متجاوبة مع الهواتف المحمولة */
+    .landing .container {
+        padding-bottom: 80px;
+    }
+
+    /* تحسين أقسام النص في الهواتف المحمولة */
+    .landing .text h1 {
+        font-size: 24px;
+    }
+    .landing .text p {
+        font-size: 16px;
+    }
+
+    /* تحسين حاويات الصورة في أقسام الهواتف المحمولة */
+    .landing .image img {
+        width: 100%;
+    }
+
+    /* ضبط حاوية الفوتر لتكون متجاوبة مع الأجهزة المحمولة */
+
+    .footer .copyright {
+        padding: 10px 0;
+    }
+    .footer .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .footer {
+        text-align: center;
+    }
+    
+    .footer .footer-gallery img {
+        width: 50px;
+        height: 40px;
+    }
+}
+/* تحسين تنسيق النص داخل البطاقات للهواتف المحمولة */
+@media (max-width: 767px) {
+    .building .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* توسيط العناصر بشكل عمودي */
+        text-align: center; /* توسيط النص داخل العناصر */
+    }
+    .building .box img {
+        margin-bottom: 10px; /* تحديد هامش أسفل الصورة لفصلها عن النص */
+    }
+}
