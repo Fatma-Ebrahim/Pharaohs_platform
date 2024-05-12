@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتجر</title>
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<header>
+<div class="container top-nav">
+        <a href="#" class="logo"><img src="images/King-Pharaohs.png" alt=""></a>
+        
+        <form action="" class="search">
+            <input type="search" placeholder="search for products">
+            <button type="submit"> بحث </button>
+        </form>
+        
+        <div class="cart">
+            <div onclick="open_cart()" class="icon-cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="count">0</span>
+            </div>
+        <!-- <div class="total-price">
+            <p>المشتريات</p>
+            <p class="price-cart">$</p>
+        </div> -->
+    </div>
+</div>
+
+<nav>
+    <div class="links container">
+        <ul>
+            <li><a href="#sliderr">الصفحة الرئيسية</a></li>
+            <li><a href="#circles">المنتجات</a></li>
+            <li><a href="#features">الخدمات</a></li>
+            <li><a href="#contact">التواصل</a></li>
+        </ul>
+
+        <div class="log">
+            <a href="">دخول <i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="">تسجيل <i class="fa-solid fa-user-plus"></i></a>
+        </div>
+    </div>
+</nav>
+</header>
+
+
+<div class="mycart">
+    <div class="top-cart">
+        <h3>مشترياتي</h3>
+        <span onclick="close_cart()" class="close-cart"><i class="fa-regular fa-circle-xmark"></i></span>
+    </div>
+
+    <div class="items-cart">
+    </div>
+
+    <div class="bottom-cart">
+        <div class="total">
+            <p>مجموع المشتريات: </p>
+            <p class="price-total">$0</p>
+        </div>
+        <div class="button-cart">
+            <a href="" class="btn-cart">proceed to checkout</a>
+            <button class="btn-cart trans-bg">shop more</button>
+        </div>
+    </div>
+</div>
+
+<section class="slider" id="sliderr">
+    <div class="container">
+        <div class="side-bar">
+            <h2><i class="fa-solid fa-bars"></i>تسوق</h2>
+            <a href="#sale"> خصومات</a>
+            <a href="#clothes">أزياء</a>
+            <a href="#accessories">اكسسوارات</a>
+            <a href="#antiques">انتيكات</a>
+            <a href="#features">خدمات</a>
+            <a href="#contact">تواصل معنا</a>
+        </div>
+
+        <div class="swiper mySwiper myyySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/slider-clothes.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider-acc.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider-antiqes.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<section class="circles" id="circles">
+    <div class="container">
+        <div class="circle-item">
+            <a href="#sale"><img src="images/circle-sale.webp" alt=""></a>
+                <h4>خصومات</h4>
+        </div>
+
+        <div class="circle-item">
+            <a href="#clothes"><img src="images/circle-clothes.jpeg" alt=""></a>
+                <h4>أزياء</h4>
+        </div>
+
+        <div class="circle-item">
+            <a href="#accessories"><img src="images/circle-accessories.jpg" alt=""></a>
+                <h4>اكسسوارات</h4>
+        </div>
+
+        <div class="circle-item">
+            <a href="#antiques"><img src="images/circle-antics.jpeg" alt=""></a>
+                <h4>انتيكات</h4>
+        </div>
+    </div>
+</section>
+
+<section class="slide slide-sale" id="sale">
+    <div class="container">
+        <div class="sale_sec mySwiper">
+            <div class="top-slide">
+                <h2>خصومات</h2>
+                <p class="sale-present">%15</p>
+            </div>
+
+            <div class="products swiper-wrapper" id="products_sale">
+                <div class="product swiper-slide">
+                    <img src="" alt="" class="img">
+                    <h2 class="name"></h2>
+                <div class="price-container">
+                    <p class="price"></p>
+                    <p class="old_price"></p>
+                </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next btn-swip"></div>
+            <div class="swiper-button-prev btn-swip"></div>
+        </div>
+    </div>
+</section>
+
+<section class="banner-section">
+    <div class="container">
+        <div class="banners">
+        <img class="banner" src="images/slider-clothes - Copy.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="slide slide-clothes" id="clothes">
+    <div class="container">
+        <div class="clothes_sec mySwiper">
+            <div class="top-slide">
+                <h2>أزياء</h2>
+            </div>
+
+            <div class="products clothes-product  prs" id="products_clothes">
+                <div class="product cloth-product swiper-slide  prsp">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner-section">
+    <div class="container">
+        <div class="banners">
+        <img class="banner" src="images/slider-acc - Copy.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="slide slide-accessories" id="accessories">
+    <div class="container">
+        <div class="accessories_sec mySwiper">
+            <div class="top-slide">
+                <h2>اكسسوارات</h2>
+            </div>
+
+            <div class="products accessories-product  prs" id="products_accessories">
+                <div class="product accessories-product swiper-slide prsp">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner-section">
+    <div class="container">
+        <div class="banners">
+        <img class="banner" src="images/slider-antiqes - Copy.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="slide slide-antiques" id="antiques">
+    <div class="container">
+        <div class="antiques_sec mySwiper">
+            <div class="top-slide">
+                <h2>انتيكات</h2>
+            </div>
+
+            <div class="products antiques-product  prs" id="products_antiques">
+                <div class="product antiques-product swiper-slide prsp">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <div class="container">
+        <div class="feature-item">
+            <i class="fa-solid fa-dolly fa-2xl"></i>
+            <div class="text">
+                <h4>شحن مجانا</h4>
+                <p>يسرنا أن نقدم لكم خدمة الشحن المجاني كجزء من تجربة التسوق معنا. مع خدمة الشحن المجاني، يمكنكم الاستمتاع بتوصيل طلباتكم إلى عتبة منزلكم دون أي تكلفة إضافية.</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <i class="fa-solid fa-truck-fast fa-2xl"></i>
+            <div class="text">
+                <h4>توصيل سريع</h4>
+                <p>نحن نفخر بتوفير خدمة توصيل سريعة لجميع عملائنا، حيث نسعى جاهدين لضمان وصول طلبياتكم إليكم في أسرع وقت ممكن. باستخدام شركاء الشحن الموثوق بهم، نقوم بتسليم طلباتكم بكفاءة ودقة. </p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <i class="fa-solid fa-credit-card fa-2xl"></i>
+            <div class="text">
+                <h4>دفع آمن</h4>
+                <p>يتمثل هدفنا في ضمان دفع آمن ومأمون لكل عملية شراء تقومون بها عبر موقعنا للتجارة الإلكترونية. نحن نستخدم أحدث تقنيات التشفير لحماية معلوماتك المالية وضمان سرية بياناتك الشخصية.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+                <div class="container">
+                <div class="main-heading">
+                    <h2>تواصل معنا</h2>
+                </div>
+        
+                <div class="content">
+                    <form action="">
+                        <input class="main-input" type="text" name="name" placeholder="Your Name" />
+                        <input class="main-input" type="email" name="mail" placeholder="Your Email" />
+                        <textarea class="main-input" name="message" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message" />
+                    </form>
+                </div>
+                </div>
+</section>
+
+<section class="footer">
+        <div class="container">
+            <img decoding="async" src="images/King-Pharaohs.png" alt="Logo" />
+            <p>We Are Social</p>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-home"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        </div>
+</section>
+
+
+<script src="js/java-script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/items.js"></script>
+<script src="js/items.json"></script>
+<script src="js/clothes.json"></script>
+<script src="js/accessories.json"></script>
+<script src="js/antiques.json"></script>
+</body>
+</html>
+
