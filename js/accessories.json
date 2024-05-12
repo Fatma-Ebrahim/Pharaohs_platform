@@ -1,0 +1,108 @@
+
+[
+    {
+    "id": 0,
+    "img": "images/acc1.png",
+    "name": "قلادة كليوباترا",
+    "price": 285,
+    "icons": "i"
+},
+    {
+    "id": 1,
+    "img": "images/acc2.png",
+    "name": "سلسلة بدلاية للنساء",
+    "price": 100,
+    "icons": "i"
+},
+{
+    "id": 2,
+    "img": "images/acc3.png",
+    "name": "عقد وأقراط وسوار",
+    "price": 940,
+    "icons": "i"
+    },
+    {
+    "id": 3,
+    "img": "images/acc4.png",
+    "name": "خاتم",
+    "price": 90,
+    "icons": "i"
+    },
+    {
+    "id": 4,
+    "img": "images/acc5.png",
+    "name": "عقد نسائي",
+    "price": 350,
+    "icons": "i"
+    },
+    {
+    "id": 5,
+    "img": "images/acc6.png",
+    "name": " أقراط ",
+    "price": 120,
+    "icons": "i"
+    },
+    {
+    "id": 6,
+    "img": "images/acc7.png",
+    "name": "عقد وأقراط وخاتم",
+    "price": 1000,
+    "icons": "i"
+    },
+    {
+    "id": 7,
+    "img": "images/acc8.png",
+    "name": "عقد بحجر كريم",
+    "price": 1150,
+    "icons": "i"
+    },
+    {
+    "id": 8,
+    "img": "images/acc9.png",
+    "name": "عقد مزخرف",
+    "price": 150,
+    "icons": "i"
+    },
+    {
+    "id": 9,
+    "img": "images/acc10.png",
+    "name": "عقد فرعوني",
+    "price": 150,
+    "icons": "i"
+    },
+    {
+    "id": 10,
+    "img": "images/acc11.png",
+    "name": "خاتم بنقوش فرعونية",
+    "price": 150,
+    "icons": "i"
+    },
+    {
+    "id": 11,
+    "img": "images/acc12.png",
+    "name": "عقد نفرتيتي",
+    "price": 150,
+    "icons": "i"
+    },
+    {
+    "id": 12,
+    "img": "images/acc13.png",
+    "name": "عقد وحزام فرعونى",
+    "price": 150,
+    "icons": "i"
+    },
+    {
+    "id": 13,
+    "img": "images/acc14.png",
+    "name": "عقد عين حورس",
+    "price": 90,
+    "icons": "i"
+    },
+    {
+    "id": 14,
+    "img": "images/acc15.png",
+    "name": "خواتم كوبرا فرعونية ",
+    "price": 500,
+    "icons": "i"
+    }
+]

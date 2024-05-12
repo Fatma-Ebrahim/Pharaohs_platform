@@ -1,0 +1,67 @@
+
+[
+    {
+      "id": 0,
+      "img": "images/acc6.png",
+      "name": " أقراط ",
+      "price": 185,
+      "old_price": 225,
+      "icons": "i"
+    },
+    {
+      "id": 1,
+      "img": "images/acc9.png",
+      "name": "عقد مزخرف",
+      "price": 100,
+      "old_price": 120,
+      "icons": "i"
+    },
+    {
+      "id": 2,
+      "img": "images/ant12.png",
+      "name": "هرم مصري فرعوني",
+      "price": 140,
+      "old_price": 200,
+      "icons": "i"
+    },
+    {
+      "id": 3,
+      "img": "images/acc2.png",
+      "name": "سلسلة بدلاية للنساء",
+      "price": 90,
+      "old_price": 110,
+      "icons": "i"
+    },
+    {
+      "id": 4,
+      "img": "images/ant15.png",
+      "name": "صندوق بنقوش  ",
+      "price": 350,
+      "old_price": 420,
+      "icons": "i"
+    },
+    {
+      "id": 5,
+      "img": "images/clothes22.png",
+      "name": "زي فرعوني للبنات ",
+      "price": 200,
+      "old_price": 235,
+      "icons": "i"
+    },
+    {
+      "id": 6,
+      "img": "images/acc5.png",
+      "name": "عقد نسائي",
+      "price": 225,
+      "old_price": 280,
+      "icons": "i"
+    },
+    {
+      "id": 7,
+      "img": "images/ant11.png",
+      "name": " مسلة مصرية فرعونية",
+      "price": 150,
+      "old_price": 200,
+      "icons": "i"
+    }
+  ]

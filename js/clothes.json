@@ -1,0 +1,178 @@
+
+[
+    {
+      "id": 0,
+      "img": "images/clothes1.png",
+      "name": "ملابس كليوباترا",
+      "price": 185,
+      "icons": "i"
+    },
+    {
+      "id": 1,
+      "img": "images/clothes2.png",
+      "name": "زي فرعوني",
+      "price": 100,
+      "icons": "i"
+    },
+    {
+      "id": 2,
+      "img": "images/clothes3.png",
+      "name": "زي فرعوني اسود",
+      "price": 140,
+      "icons": "i"
+    },
+    {
+      "id": 3,
+      "img": "images/clothes4.png",
+      "name": "زي فرعوني للاطفال",
+      "price": 90,
+      "icons": "i"
+    },
+    {
+      "id": 4,
+      "img": "images/clothes5.png",
+      "name": "زي فرعوني للاطفال",
+      "price": 350,
+      "icons": "i"
+    },
+    {
+      "id": 5,
+      "img": "images/clothes6.png",
+      "name": " ملابس رجالي ",
+      "price": 115,
+      "icons": "i"
+    },
+    {
+      "id": 6,
+      "img": "images/clothes7.png",
+      "name": "زي فرعوني للنساء ",
+      "price": 225,
+      "icons": "i"
+    },
+    {
+      "id": 7,
+      "img": "images/clothes8.png",
+      "name": "زي فرعوني للرجال",
+      "price": 550,
+      "icons": "i"
+    },
+    {
+      "id": 8,
+      "img": "images/clothes9.png",
+      "name": "ملابس فرعونية للبنات ",
+      "price": 350,
+      "icons": "i"
+    },
+    {
+      "id": 9,
+      "img": "images/clothes10.png",
+      "name": "زي فرعوني للرجال",
+      "price": 300,
+      "icons": "i"
+    },
+    {
+      "id": 10,
+      "img": "images/clothes11.png",
+      "name": "ملابس فرعونية للنساء",
+      "price": 500,
+      "icons": "i"
+    },
+    {
+      "id": 11,
+      "img": "images/clothes12.png",
+      "name": "زي فرعوني للنساء",
+      "price": 190,
+      "icons": "i"
+    },
+    {
+      "id": 12,
+      "img": "images/clothes13.png",
+      "name": "زي فرعوني للنساء",
+      "price": 350,
+      "icons": "i"
+    },
+    {
+      "id": 13,
+      "img": "images/clothes14.png",
+      "name": "زي فرعوني للنساء",
+      "price": 490,
+      "icons": "i"
+    },
+    {
+      "id": 14,
+      "img": "images/clothes15.png",
+      "name": "زي فرعوني للنساء",
+      "price": 350,
+      "icons": "i"
+    },
+    {
+      "id": 15,
+      "img": "images/clothes16.png",
+      "name": "زي فرعوني للرجال",
+      "price": 115,
+      "icons": "i"
+    },
+    {
+      "id": 16,
+      "img": "images/clothes17.png",
+      "name": "ملابس فرعونية للرجال",
+      "price": 225,
+      "icons": "i"
+    },
+    {
+      "id": 17,
+      "img": "images/clothes18.png",
+      "name": "زي فرعوني للرجال",
+      "price": 150,
+      "icons": "i"
+    },
+    {
+      "id": 18,
+      "img": "images/clothes19.png",
+      "name": "زي فرعوني للرجال",
+      "price": 150,
+      "icons": "i"
+    },
+    {
+      "id": 19,
+      "img": "images/clothes20.png",
+      "name": "زي فرعوني للبنات",
+      "price": 150,
+      "icons": "i"
+    },
+    {
+      "id": 20,
+      "img": "images/clothes21.png",
+      "name": "زي فرعوني للبنات",
+      "price": 150,
+      "icons": "i"
+    },
+    {
+      "id": 21,
+      "img": "images/clothes22.png",
+      "name": "ملابس فرعونية للبنات",
+      "price": 150,
+      "icons": "i"
+    },
+    {
+      "id": 22,
+      "img": "images/clothes23.png",
+      "name": "ملابس فرعونية للبنات",
+      "price": 150,
+      "icons": "i"
+    },
+    {
+      "id": 23,
+      "img": "images/clothes24.png",
+      "name": "زي فرعوني للرجال",
+      "price": 150,
+      "icons": "i"
+    },
+    {
+      "id": 24,
+      "img": "images/clothes25.png",
+      "name": "زي فرعوني للبنات",
+      "price": 150,
+      "icons": "i"
+    }
+  ]
