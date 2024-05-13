@@ -75,7 +75,7 @@ h3{
 }
 
   /* Small */
-@media (max-width: 767px) {
+@media (min-width: 767px) {
     .we{
         width: 390px;
     }
