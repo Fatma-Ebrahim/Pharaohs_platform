@@ -11,10 +11,17 @@ var swiper = new Swiper(".myyySwiper", {
 });
 
 var swiper = new Swiper(".sale_sec", {
-    slidesPerView: 5,
-    spaceBetween: 15,
+    slidesPerView: 'auto', // عرض عدد الشرائح تلقائيًا بناءً على عرض العناصر
+    spaceBetween: 10, // المسافة بين الشرائح
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },
+    breakpoints: {
+        // تعديل الإعدادات للهواتف المحمولة
+        768: {
+            slidesPerView: 1, // عرض شريحة واحدة في كل مرة على الهواتف
+            spaceBetween: 0 // إزالة المسافة بين الشرائح
+        }
+    }
 });
