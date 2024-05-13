@@ -63,12 +63,11 @@ h3{
 }
 
 .container .contents .content {
-    padding: 0 20px;
+    padding-right: 20px;
 }
 
 .we{
     width: 100%;
-    padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -78,6 +77,8 @@ h3{
 @media (min-width: 767px) {
     .we{
         width: 390px;
+            padding-right: 15px;
+
     }
 
     .container .contents .content {
