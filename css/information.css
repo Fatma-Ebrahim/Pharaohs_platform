@@ -87,7 +87,7 @@ h3{
 }
 
 /* Media Queries for Responsive Design */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .main-title {
         font-size: 30px; /* Adjust title font size for medium screens */
     }
@@ -99,11 +99,11 @@ h3{
         height: 100px; /* Restore container1 height for medium screens */
     }
     .container2 .content img{
-        width: 130px; /* Restore image width for medium screens */
-        height: 160px; /* Restore image height for medium screens */
+        width: 120px; /* Restore image width for medium screens */
+        height: 150px; /* Restore image height for medium screens */
     }
     .container2 .contents{
         flex-direction: row; /* Restore contents layout to row for medium screens */
-        padding: 0 50px; /* Restore padding for medium screens */
+        padding: 0 40px; /* Restore padding for medium screens */
     }
 }
