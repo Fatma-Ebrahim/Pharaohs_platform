@@ -23,9 +23,9 @@ a {
 }
 
   /* Small */
-@media (min-width: 700px) {
+@media (min-width: 767px) {
     .container2 {
-    width: 410px;
+    width: 610px;
     }
 }
   /* Medium */
@@ -33,6 +33,9 @@ a {
     .container {
     width: 970px;
     }
+    .container2 .contents .content{
+    padding: 0 10px;
+}
 }
   /* Large */
 @media (min-width: 1200px) {
