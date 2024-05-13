@@ -27,15 +27,15 @@ a {
     .container2 {
     width: 610px;
     }
+    .container2 .contents .content{
+    padding: 0 10px;
+}
 }
   /* Medium */
 @media (min-width: 992px) {
     .container {
     width: 970px;
     }
-    .container2 .contents .content{
-    padding: 0 10px;
-}
 }
   /* Large */
 @media (min-width: 1200px) {
