@@ -23,7 +23,7 @@ a {
 }
 
   /* Small */
-@media (min-width: 767px) {
+@media (min-width: 700px) {
     .container2 {
     width: 410px;
     }
