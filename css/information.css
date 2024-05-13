@@ -10,7 +10,7 @@ html {
 }
 body {
     font-family: "Cairo", sans-serif;
-    background-image: url(;
+    background-image: url(info-background.jpg);
     position: relative;
     background-size: cover;
     background-position: center;
@@ -21,15 +21,16 @@ body {
 a {
     text-decoration: none;
 }
-
-  /* Small */
-@media (max-width: 767px) {
-    .container2 {
-    width: 610px;
-    }
-    .container2 .contents .content{
-    padding: 0 10px;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+  /* Small */
+@media (min-width: 767px) {
+    .container {
+    width: 710px;
+    }
 }
   /* Medium */
 @media (min-width: 992px) {
@@ -71,7 +72,7 @@ header{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-     padding-left: 15px;
+        padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
