@@ -102,7 +102,7 @@ header nav .links ul li:hover{
 .landing .text {
     flex: 1;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .landing .text {
     text-align: center;
     }
@@ -185,37 +185,43 @@ header nav .links ul li:hover{
     font-size: larger;
     color: rgb(171, 46, 0);
 }
-.description{
+/* تنسيق الوصف */
+.description {
     background-color: white;
+    padding: 20px; /* إضافة بعض التباعد */
 }
 
-.description .desc1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    height: 80px;
-    gap: 20px;
+/* تنسيق الفقرة الأولى */
+.description .desc1 {
+    text-align: center; /* مركز النص */
     font-weight: bold;
+    padding-bottom: 20px; /* تباعد أسفل */
 }
-.description nav{
-    border-top: 1px solid #c8c8c8;
-}
-.description nav .desc2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+/* تنسيق الفقرة الثانية */
+.description nav .desc2 {
+    text-align: center; /* مركز النص */
     font-weight: bold;
-    padding: 20px 0;
-    height: 80px;
-    gap: 20px;
+    padding-top: 20px; /* تباعد أعلى */
+}
+
+/* تنسيق الحاوية */
+.container {
+    max-width: 100%; /* ليكون العرض ملائمًا لجميع الشاشات */
+    padding: 0 20px; /* إضافة بعض التباعد على الجوانب */
+    margin: 0 auto; /* توسيط الحاوية */
+    box-sizing: border-box; /* حساب الحجم بشكل صحيح مع الهوامش والحدود */
+}
+
+/* تصحيح العرض للعناصر */
+.desc1, .desc2 {
+    width: 100%; /* جعل العناصر تمتد للعرض الكامل */
 }
 
 .library .container .books{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
 }
 .library .container h2{
     background: #fff;
